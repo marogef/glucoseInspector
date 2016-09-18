@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="13F1112" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="812-vN-Ykn">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <scenes>
+        <!--Carbohydrates-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="lightBlueViewController" customModule="Project_3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="UIControl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="xgo-2c-0iw">
+                                <rect key="frame" x="-7" y="45" width="600" height="736"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="xTg-HU-jLX">
+                                        <rect key="frame" x="104" y="212" width="130" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" red="1" green="0.52979676880000004" blue="0.38804491229999999" alpha="0.60999999999999999" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="backgroundTap:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="fIM-qK-AaM"/>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="pEo-Dc-EZ3"/>
+                                            <action selector="didBeginEditing:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="FQS-g1-3Sr"/>
+                                            <action selector="didEndEditing:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="M70-lJ-Kz2"/>
+                                            <action selector="doneWithKeyboard:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="fLR-du-0o0"/>
+                                            <action selector="showText:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="jFK-ht-UgH"/>
+                                        </connections>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="A0G-hm-MZr">
+                                        <rect key="frame" x="258" y="212" width="100" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="See Results">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6qG-jc-3a6"/>
+                                        </connections>
+                                    </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="This section will show you if you are doing well with your carb intake.  Please enter your measurment." id="HLN-zf-hhX">
+                                        <rect key="frame" x="13" y="58" width="209" height="82"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="textColor" red="0.95423537489999999" green="0.0" blue="0.17584033975427268" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="handup.png" id="f1G-Bg-rb3">
+                                        <rect key="frame" x="104" y="250" width="70" height="89"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="handdown.png" id="Grj-Ef-afH">
+                                        <rect key="frame" x="189" y="250" width="72" height="89"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3n6-eX-3B9">
+                                        <rect key="frame" x="29" y="335" width="366" height="38"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" red="0.035294119268655777" green="0.011764707043766975" blue="0.9803922176361084" alpha="1" colorSpace="deviceRGB"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your measurement in grams:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="O2M-Kg-TDr">
+                                        <rect key="frame" x="59" y="182" width="264" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" red="0.031372550874948502" green="0.0078431377187371254" blue="0.9960784912109375" alpha="1" colorSpace="deviceRGB"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="carbs.png" id="fOx-yb-XMg">
+                                        <rect key="frame" x="229" y="0.0" width="159" height="156"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.15458886082422554" green="0.24889878997065809" blue="0.9150543212890625" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="0.52979676880000004" blue="0.38804491229999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Carbohydrates" image="carbo.png" id="KgP-R9-xfg"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="buttonOne" destination="A0G-hm-MZr" id="nbX-4s-ulF"/>
+                        <outlet property="carbView" destination="fOx-yb-XMg" id="0qj-Lj-ByN"/>
+                        <outlet property="handDown" destination="Grj-Ef-afH" id="D8n-0d-AMG"/>
+                        <outlet property="handUp" destination="f1G-Bg-rb3" id="C6G-ls-Wxa"/>
+                        <outlet property="scrollView" destination="xgo-2c-0iw" id="fiV-EF-EJt"/>
+                        <outlet property="textBox1" destination="xTg-HU-jLX" id="oVe-iI-kNN"/>
+                        <outlet property="textFields" destination="HLN-zf-hhX" id="6Pz-sN-HXa"/>
+                        <outlet property="textLabel" destination="3n6-eX-3B9" id="WdR-xh-aTD"/>
+                        <outlet property="valueOne" destination="O2M-Kg-TDr" id="OUu-Vy-kUl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-16" y="2053"/>
+        </scene>
+        <!--More Info-->
+        <scene sceneID="0MK-mb-6gY">
+            <objects>
+                <viewController id="fCF-j4-dOt" customClass="yellowViewController" customModule="Project_3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ea5-rK-dI5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1J7-CG-Dfj">
+                                <rect key="frame" x="16" y="37" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="&lt;-">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goBack:" destination="fCF-j4-dOt" eventType="touchUpInside" id="qlY-zO-KXb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fZH-x7-bHm">
+                                <rect key="frame" x="54" y="37" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="->">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goForward:" destination="fCF-j4-dOt" eventType="touchUpInside" id="0kK-wz-Kd0"/>
+                                </connections>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="3F8-33-Sda">
+                                <rect key="frame" x="327" y="38" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="changeFit:" destination="fCF-j4-dOt" eventType="valueChanged" id="ejy-ul-PTt"/>
+                                </connections>
+                            </switch>
+                            <webView contentMode="scaleToFill" id="iu1-lw-8WQ">
+                                <rect key="frame" x="0.0" y="76" width="414" height="609"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fit" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Gti-NN-GIb">
+                                <rect key="frame" x="335" y="14" width="23" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="6aV-c8-XFg">
+                                <rect key="frame" x="97" y="37" width="200" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="doneWithKeyboard:" destination="fCF-j4-dOt" eventType="editingDidEndOnExit" id="eHA-Mc-Vmy"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.83749928202615842" blue="0.34687990993462914" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="More Info" image="info.png" id="CX3-bm-XnH"/>
+                    <connections>
+                        <outlet property="back" destination="1J7-CG-Dfj" id="ljh-iG-NBa"/>
+                        <outlet property="fit" destination="Gti-NN-GIb" id="bGM-iK-yfB"/>
+                        <outlet property="forward" destination="fZH-x7-bHm" id="8lZ-tv-PEN"/>
+                        <outlet property="mySwitch" destination="3F8-33-Sda" id="DdG-2V-WOB"/>
+                        <outlet property="textBox3" destination="6aV-c8-XFg" id="qrt-LR-47A"/>
+                        <outlet property="webView" destination="iu1-lw-8WQ" id="BY3-bA-qWP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y1B-UU-nY1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="547" y="512"/>
+        </scene>
+        <!--Glucose-->
+        <scene sceneID="QHg-le-t8M">
+            <objects>
+                <viewController id="Udx-wJ-k8W" customClass="lightRedViewController" customModule="Project_3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="F0T-8P-hUP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="xUq-ur-AD1">
+                                <rect key="frame" x="0.0" y="0.0" width="443" height="678"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="oVT-3m-Fc3">
+                                        <rect key="frame" x="129" y="51" width="97" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="backgroundTap:" destination="Udx-wJ-k8W" eventType="touchDown" id="G2M-0l-ord"/>
+                                            <action selector="backgroundTap:" destination="Udx-wJ-k8W" eventType="editingDidEnd" id="c9I-zu-ecb"/>
+                                            <action selector="buttonPressed:" destination="Udx-wJ-k8W" eventType="valueChanged" id="7R6-GH-VUz"/>
+                                            <action selector="didBeginEditing:" destination="Udx-wJ-k8W" eventType="editingDidBegin" id="wdW-MF-SyJ"/>
+                                            <action selector="didEndEditing:" destination="Udx-wJ-k8W" eventType="editingDidEnd" id="ZKr-z6-Xk6"/>
+                                            <action selector="showText:" destination="Udx-wJ-k8W" eventType="editingDidEndOnExit" id="xLi-69-tFG"/>
+                                        </connections>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your fasting glucose measurement" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4Sy-z4-YL9">
+                                        <rect key="frame" x="51" y="22" width="309" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.15458886080000001" green="0.24889879000000001" blue="0.91505432129999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fLD-R6-hsr">
+                                        <rect key="frame" x="239" y="50" width="106" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Show Category">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="Udx-wJ-k8W" eventType="touchUpInside" id="r3d-pr-uFf"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bTj-Jq-gxB">
+                                        <rect key="frame" x="42" y="96" width="364" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="a6s-Cr-dPa">
+                                        <rect key="frame" x="26" y="172" width="334" height="396"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="Udx-wJ-k8W" id="4Cl-5K-5e0"/>
+                                            <outlet property="delegate" destination="Udx-wJ-k8W" id="JbZ-YV-fMe"/>
+                                        </connections>
+                                    </tableView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Superfoods foods with good carbs" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bmu-4d-VWy">
+                                        <rect key="frame" x="33" y="142" width="266" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.21341945840000001" green="1" blue="0.20550389499999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" red="0.24313727020000001" green="0.16078431900000001" blue="0.93333339689999995" alpha="1" colorSpace="deviceRGB"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Good carbs = Better glucose measurement" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fa4-Am-r3m">
+                                        <rect key="frame" x="26" y="585" width="331" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.03529411927" green="0.011764707040000001" blue="0.98039221759999995" alpha="1" colorSpace="deviceRGB"/>
+                                        <color key="highlightedColor" red="1" green="0.83749928200000001" blue="0.34687990990000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </label>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Glucose" image="health.png" id="Qrh-vs-Obz"/>
+                    <connections>
+                        <outlet property="buttonOne" destination="fLD-R6-hsr" id="xu2-R4-lqr"/>
+                        <outlet property="carbTable" destination="a6s-Cr-dPa" id="1ES-Z8-waR"/>
+                        <outlet property="message" destination="fa4-Am-r3m" id="jLV-Mp-kMM"/>
+                        <outlet property="scrollView" destination="xUq-ur-AD1" id="lXX-9v-tZY"/>
+                        <outlet property="textBox2" destination="oVT-3m-Fc3" id="vFe-Ji-VvW"/>
+                        <outlet property="textLabel" destination="bTj-Jq-gxB" id="MpA-yY-dsc"/>
+                        <outlet property="titleMessage" destination="bmu-4d-VWy" id="Yrp-8U-SOv"/>
+                        <outlet property="valueTwo" destination="4Sy-z4-YL9" id="2LC-tV-2dG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zBW-Ka-p4J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="612" y="1597"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="aih-R9-hSx">
+            <objects>
+                <tabBarController id="812-vN-Ykn" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="fmw-SH-61P">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Udx-wJ-k8W" kind="relationship" relationship="viewControllers" id="mWD-lv-moM"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="ueA-Zh-zYH"/>
+                        <segue destination="fCF-j4-dOt" kind="relationship" relationship="viewControllers" id="gsF-Zh-e4P"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CEH-pb-3Kg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-53" y="1114"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="carbo.png" width="48" height="48"/>
+        <image name="carbs.png" width="912" height="1086"/>
+        <image name="handdown.png" width="1010" height="1062"/>
+        <image name="handup.png" width="1010" height="1062"/>
+        <image name="health.png" width="48" height="48"/>
+        <image name="info.png" width="48" height="48"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
